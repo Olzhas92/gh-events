@@ -1,5 +1,10 @@
 name: Events Demo 1
 on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - .github/workflows/*.yml
   pull_request:
     types: opened #opening a PR from dev to main
   workflow_dispatch:
